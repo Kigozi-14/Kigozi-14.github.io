@@ -6,7 +6,16 @@
     <title>post_page</title>
 </head>
 <body>
-    <form action="">
+    <form method="POST" action="/submit" enctype="multipart/form-data">
+        <label><h3>FOR MY BLOG POSTS</h3></label>
+        <input type="text" name="heading" placeholder='heading' />
+        <input type="text" name="description" placeholder="Description" />
+        <input type="text" name="password" placeholder="password" />
+        <input type="file" name="image_file" placeholder="Upload Image Here"/>
+        <ul class="actions">
+            <li><input type="submit" value="Send Message" /></li>
+            <li><input type="reset" value="Clear Form" class="alt" /></li>
+        </ul>
     </form>
 </body>
 </html>
